@@ -46,6 +46,12 @@ export default function RootLayout({
   return (
     <html lang="es" className="bg-background">
       <head>
+        {/* Google Search Console */}
+        <meta
+          name="google-site-verification"
+          content="google21814d0ecef082bc"
+        />
+
         {/* Google Analytics 4 */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-2WC0BN3Z6W"
