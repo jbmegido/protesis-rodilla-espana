@@ -3,6 +3,8 @@ import type { Metadata, Viewport } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
+import type { Metadata } from 'next'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
@@ -48,6 +50,25 @@ export default function RootLayout({
         {children}
         <Analytics />
       </body>
+    </html>
+  )
+}
+export const metadata: Metadata = {
+  title: 'https://protesis-rodilla-espana.netlify.app/',
+  description: 'Información completa sobre cirugía de rodilla en España: guías de prótesis, comparativa público vs privado, clínicas por Comunidad Autónoma y tiempos de espera actualizados.',
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="es">
+      <body>
+        {children}
+      </body>
+      <GoogleAnalytics gaId="G-2WC0BN3Z6W" />
     </html>
   )
 }
