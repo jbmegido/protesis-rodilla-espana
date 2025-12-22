@@ -3,7 +3,7 @@ import type { Metadata, Viewport } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
-import { GoogleAnalytics } from "@next/third-parties/google"
+import Script from "next/script"
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
@@ -45,10 +45,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className="bg-background">
+      <head>
+        {/* Google Analytics 4 */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-2WC0BN3Z6W"
+          strategy="afterInteractive"
+        />
+        <Script id="ga-gtag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-2WC0BN3Z6W');
+          `}
+        </Script>
+      </head>
       <body className="font-sans antialiased">
         {children}
         <Analytics />
-        <GoogleAnalytics gaId="G-2WC0BN3Z6W" />
       </body>
     </html>
   )
