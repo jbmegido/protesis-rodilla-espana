@@ -51,14 +51,3 @@ export default function RootLayout({
     </html>
   )
 }
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="es">
-      <head>
-        <meta name="google-site-verification" content="google21814d0ecef082bc" />
-        {/* el resto de tags que ya tengas */}
-      </head>
-      <body>{children}</body>
-    </html>
-  );
-}
