@@ -1,11 +1,5 @@
-import type { Metadata } from "next"
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
-import { TableOfContents } from "@/components/pillar/table-of-contents"
-import { ContentSection } from "@/components/pillar/content-section"
-import { CcaaLinks } from "@/components/pillar/ccaa-links"
-import { SystemCards } from "@/components/pillar/system-cards"
-import { FaqSection, faqs } from "@/components/pillar/faq-section"
 
 export const metadata: Metadata = {
   title: "Guía Completa Prótesis Rodilla España 2025: Tipos, Procedimiento, Recuperación",
