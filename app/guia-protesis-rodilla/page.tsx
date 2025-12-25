@@ -18,6 +18,26 @@ const tocItems = [
   { id: "preguntas-frecuentes", title: "Preguntas frecuentes" },
 ]
 
+// AÑADE ESTO justo antes de const faqSchema
+const faqs = [
+  { question: "Cuánto cuesta prótesis rodilla España?", answer: "8-16k€ privado" },
+  { question: "Cuánto dura recuperación?", answer: "3-6 meses" }
+]
+
+// JSON-LD Schemas
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+}
+
 export default function GuiaProtesisRodillaPage() {
   return (
     <div className="min-h-screen bg-background">
