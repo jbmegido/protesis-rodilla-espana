@@ -63,47 +63,17 @@ const medicalWebPageSchema = {
   lastReviewed: "2025-01-01",
 }
 
-export default function GuiaProtesisRodillaPage() {
-  return (
-    <div className="min-h-screen bg-background">
-      {/* Header with Breadcrumbs */}
-      <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border">
-        <div className="max-w-7xl mx-auto px-4 py-4">
-          <nav className="flex items-center gap-1 text-sm text-muted-foreground" aria-label="Breadcrumb">
-            <Link href="/" className="hover:text-foreground transition-colors min-h-[44px] flex items-center">
-              Inicio
-            </Link>
-            <ChevronRight className="w-4 h-4" />
-            <span className="text-foreground font-medium">Guía Prótesis Rodilla 2025</span>
-          </nav>
-        </div>
-      </header>
+<main className="flex-1 min-w-0">
+  <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+    Guía Completa Prótesis de Rodilla España 2025
+  </h1>
+  
+  {/* COMENTADO temporal */}
+  {/* <FaqSection /> */}
 
-      <div className="max-w-7xl mx-auto px-4 py-6 md:py-10">
-        <div className="flex gap-8 lg:gap-12">
-          {/* TOC Desktop - oculto temporal */}
-          <aside className="hidden lg:block w-64 shrink-0">
-            <div className="sticky top-24">
-              <TableOfContents items={tocItems} />
-            </div>
-          </aside>
-
-          {/* MAIN */}
-          <main className="flex-1 min-w-0">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-              Guía Completa Prótesis de Rodilla España 2025
-            </h1>
-            
-            <FaqSection />
-
-            <footer className="mt-12 py-6 border-t border-border">
-              <p className="text-sm text-muted-foreground text-center">
-                Información de carácter general. Este sitio no sustituye la consulta con profesionales sanitarios cualificados.
-              </p>
-            </footer>
-          </main>
-        </div>
-      </div>
-    </div>
-  )
-}
+  <footer className="mt-12 py-6 border-t border-border">
+    <p className="text-sm text-muted-foreground text-center">
+      Información de carácter general. Este sitio no sustituye la consulta con profesionales sanitarios cualificados.
+    </p>
+  </footer>
+</main>
