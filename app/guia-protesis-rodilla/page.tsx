@@ -63,17 +63,37 @@ const medicalWebPageSchema = {
   lastReviewed: "2025-01-01",
 }
 
-<main className="flex-1 min-w-0">
-  <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-    Guía Completa Prótesis de Rodilla España 2025
-  </h1>
-  
-  {/* COMENTADO temporal */}
-  {/* <FaqSection /> */}
+export default function GuiaProtesisRodillaPage() {
+  return (
+    <div className="min-h-screen bg-background">
+      <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border">
+        <div className="max-w-7xl mx-auto px-4 py-4">
+          <nav className="flex items-center gap-1 text-sm text-muted-foreground">
+            <Link href="/">Inicio</Link>
+            <ChevronRight className="w-4 h-4" />
+            <span className="text-foreground font-medium">Guía Prótesis Rodilla 2025</span>
+          </nav>
+        </div>
+      </header>
 
-  <footer className="mt-12 py-6 border-t border-border">
-    <p className="text-sm text-muted-foreground text-center">
-      Información de carácter general. Este sitio no sustituye la consulta con profesionales sanitarios cualificados.
-    </p>
-  </footer>
-</main>
+      <div className="max-w-7xl mx-auto px-4 py-10">
+        <main className="flex-1">
+          <h1 className="text-4xl font-bold mb-8">
+            Guía Completa Prótesis de Rodilla España 2025
+          </h1>
+          
+          <p className="text-lg text-muted-foreground mb-8">
+            Información general sobre cirugía de rodilla en España.
+          </p>
+
+          <footer className="py-8 border-t mt-12">
+            <p className="text-sm text-muted-foreground text-center">
+              Información de carácter general. Este sitio no sustituye la consulta médica.
+            </p>
+          </footer>
+        </main>
+      </div>
+    </div>
+  )
+}
+
