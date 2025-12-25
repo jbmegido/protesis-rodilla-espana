@@ -347,7 +347,10 @@ export default function GuiaProtesisRodillaPage() {
                 </div>
                 <SystemCards />
               </section>
-
+              
+              {/* FAQ Section */}
+              <FaqSection />
+              
               <footer className="mt-12 py-6 border-t border-border">
                 <p className="text-sm text-muted-foreground text-center">
                   Información de carácter general. Este sitio no sustituye la consulta con profesionales sanitarios
