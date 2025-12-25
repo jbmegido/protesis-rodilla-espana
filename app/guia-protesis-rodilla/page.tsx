@@ -404,5 +404,5 @@ export default function GuiaProtesisRodillaPage() {
             </main>
           </div>
         </div>
-      </div>,
+      </div>
 </> 
