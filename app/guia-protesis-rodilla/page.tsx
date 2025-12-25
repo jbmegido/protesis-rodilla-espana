@@ -116,7 +116,7 @@ export default function GuiaProtesisRodillaPage() {
               </div>
 
               {/* Section 1: ¿Qué es una prótesis de rodilla? */}
-              <ContentSection
+              {/* <ContentSection
                 id="que-es-protesis"
                 title="¿Qué es una prótesis de rodilla?"
                 imageSrc="/knee-prosthesis-implant-medical-illustration.jpg"
@@ -148,10 +148,10 @@ export default function GuiaProtesisRodillaPage() {
                   <li>Tasa de éxito superior al 95% en alivio del dolor</li>
                   <li>Durabilidad media de 15-25 años con los implantes actuales</li>
                 </ul>
-              </ContentSection>
+              </ContentSection>*/}
 
               {/* Section 2: Tipos de prótesis */}
-              <ContentSection
+              {/*<ContentSection
                 id="tipos-protesis"
                 title="Tipos de prótesis de rodilla"
                 imageSrc="/different-types-knee-replacement-prosthesis-compar.jpg"
@@ -198,10 +198,10 @@ export default function GuiaProtesisRodillaPage() {
                     <strong>Prótesis robótica:</strong> Implantación asistida por tecnología
                   </li>
                 </ul>
-              </ContentSection>
+              </ContentSection>*/}
 
               {/* Section 3: Candidatos */}
-              <ContentSection
+              {/* <ContentSection
                 id="candidatos"
                 title="¿Quién es candidato a una prótesis de rodilla?"
                 imageSrc="/doctor-consulting-elderly-patient-knee-pain-examin.jpg"
@@ -238,10 +238,10 @@ export default function GuiaProtesisRodillaPage() {
                   <li>Deformidades severas (genu varo o valgo)</li>
                   <li>Fracturas complejas de rodilla no reconstruibles</li>
                 </ul>
-              </ContentSection>
+              </ContentSection>*/}
 
               {/* Section 4: Procedimiento */}
-              <ContentSection
+              {/*<ContentSection
                 id="procedimiento"
                 title="El procedimiento quirúrgico"
                 imageSrc="/orthopedic-surgery-operating-room-knee-replacement.jpg"
@@ -279,10 +279,10 @@ export default function GuiaProtesisRodillaPage() {
                   <li>Implantación y fijación de los componentes</li>
                   <li>Cierre y vendaje compresivo</li>
                 </ul>
-              </ContentSection>
+              </ContentSection>*/}
 
               {/* Section 5: Recuperación */}
-              <ContentSection
+              {/* <ContentSection
                 id="recuperacion"
                 title="Recuperación y rehabilitación"
                 imageSrc="/physical-therapy-knee-rehabilitation-elderly-patie.jpg"
@@ -330,7 +330,7 @@ export default function GuiaProtesisRodillaPage() {
                     <strong>Meses 3-6:</strong> Recuperación funcional completa
                   </li>
                 </ul>
-              </ContentSection>
+              </ContentSection>*/}
 
               <section id="informacion-ccaa" className="scroll-mt-24 py-8 md:py-12 border-b border-border">
                 <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
