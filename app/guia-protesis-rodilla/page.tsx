@@ -18,45 +18,6 @@ const tocItems = [
   { id: "preguntas-frecuentes", title: "Preguntas frecuentes" },
 ]
 
-// JSON-LD Schemas
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqs.map((faq) => ({
-    "@type": "Question",
-    name: faq.question,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: faq.answer,
-    },
-  })),
-}
-
-const medicalWebPageSchema = {
-  "@context": "https://schema.org",
-  "@type": "MedicalWebPage",
-  name: "Guía Completa Prótesis de Rodilla España 2025",
-  description:
-    "Todo lo que necesita saber sobre la cirugía de reemplazo de rodilla: tipos, procedimiento, recuperación y sistema público/privado en España.",
-  about: {
-    "@type": "MedicalCondition",
-    name: "Artrosis de rodilla",
-  },
-  mainContentOfPage: {
-    "@type": "WebPageElement",
-    cssSelector: "main",
-  },
-  specialty: {
-    "@type": "MedicalSpecialty",
-    name: "Traumatología y Cirugía Ortopédica",
-  },
-  audience: {
-    "@type": "PeopleAudience",
-    audienceType: "Pacientes",
-  },
-  lastReviewed: "2025-01-01",
-}
-
 export default function GuiaProtesisRodillaPage() {
   return (
     <div className="min-h-screen bg-background">
