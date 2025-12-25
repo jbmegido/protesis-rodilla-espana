@@ -340,7 +340,7 @@ export default function GuiaProtesisRodillaPage() {
                   Los precios en el sector privado y los tiempos de espera en la sanidad pública varían
                   significativamente entre las distintas comunidades autónomas españolas.
                 </p>
-                <CcaaLinks />
+                {/* <CcaaLinks /> */}
               </section>
 
               {/* Section 7: Público vs Privado */}
@@ -389,7 +389,7 @@ export default function GuiaProtesisRodillaPage() {
                     .
                   </p>
                 </div>
-                <SystemCards />
+                {/* <SystemCards /> */}
               </section>
 
               {/* FAQ Section */}
@@ -405,6 +405,3 @@ export default function GuiaProtesisRodillaPage() {
           </div>
         </div>
       </div>
-    </>
-  )
-}
