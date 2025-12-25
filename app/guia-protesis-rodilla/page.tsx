@@ -66,9 +66,8 @@ const medicalWebPageSchema = {
 export default function GuiaProtesisRodillaPage() {
   return (
     <>
-      /* <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalWebPageSchema) }} />
-      */
+      /*<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />*/
+      /*<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalWebPageSchema) }} />*/
 
       <div className="min-h-screen bg-background">
         {/* Header with Breadcrumbs */}
