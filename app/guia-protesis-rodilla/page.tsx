@@ -5,7 +5,6 @@ import { TableOfContents } from "@/components/pillar/table-of-contents"
 import { ContentSection } from "@/components/pillar/content-section"
 import { CcaaLinks } from "@/components/pillar/ccaa-links"
 import { SystemCards } from "@/components/pillar/system-cards"
-import { FaqSection, faqs } from "@/components/pillar/faq-section"
 
 export const metadata: Metadata = {
   title: "Guía Completa Prótesis Rodilla España 2025: Tipos, Procedimiento, Recuperación",
@@ -23,52 +22,9 @@ const tocItems = [
   { id: "publico-privado", title: "Sistema público vs privado" },
   { id: "preguntas-frecuentes", title: "Preguntas frecuentes" },
 ]
-/*
-// JSON-LD Schemas
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqs.map((faq) => ({
-    "@type": "Question",
-    name: faq.question,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: faq.answer,
-    },
-  })),
-}
-
-const medicalWebPageSchema = {
-  "@context": "https://schema.org",
-  "@type": "MedicalWebPage",
-  name: "Guía Completa Prótesis de Rodilla España 2025",
-  description:
-    "Todo lo que necesita saber sobre la cirugía de reemplazo de rodilla: tipos, procedimiento, recuperación y sistema público/privado en España.",
-  about: {
-    "@type": "MedicalCondition",
-    name: "Artrosis de rodilla",
-  },
-  mainContentOfPage: {
-    "@type": "WebPageElement",
-    cssSelector: "main",
-  },
-  specialty: {
-    "@type": "MedicalSpecialty",
-    name: "Traumatología y Cirugía Ortopédica",
-  },
-  audience: {
-    "@type": "PeopleAudience",
-    audienceType: "Pacientes",
-  },
-  lastReviewed: "2025-01-01",
-}
-*/
 export default function GuiaProtesisRodillaPage() {
   return (
     <>
-      /*<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />*/
-      /*<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalWebPageSchema) }} />*/
-
       <div className="min-h-screen bg-background">
         {/* Header with Breadcrumbs */}
         <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border">
@@ -391,9 +347,6 @@ export default function GuiaProtesisRodillaPage() {
                 </div>
                 <SystemCards />
               </section>
-
-              {/* FAQ Section */}
-              <FaqSection />
 
               <footer className="mt-12 py-6 border-t border-border">
                 <p className="text-sm text-muted-foreground text-center">
