@@ -49,7 +49,7 @@ export default function RootLayout({
         {/* Google Search Console */}
         <meta
           name="google-site-verification"
-          content="7TkCqmt6ag6j_eHK04ewXyRsFcuRemtZKrJjDBCtey8"
+          content="A2j4o02Su1UL-i5mhQ2PyMnXZyAJ-A25IsjE6Ar8Umk"
         />
 
         {/* Google Analytics 4 */}
